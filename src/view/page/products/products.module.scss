@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  h4 {
+    width: 100%;
+    color: #272A37;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+.selects {
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: flex-end;
+}
+
+.selectBox:first-child {
+  width: 140px;
+  margin-right: 8px;
+}
+
+.selectBox:last-child {
+  width: 164px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+}
