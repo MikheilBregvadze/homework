@@ -1,3 +1,4 @@
+import {memo} from "react";
 import {SVG} from "../../../../components/svg/svg";
 import {FormatPrice, TimeSince} from "../../../../services/common";
 import style from './product.module.scss'
@@ -94,4 +95,4 @@ const Product = ({ item, currencyChange }) => {
     )
 }
 
-export default Product;
+export default memo(Product);

@@ -1,3 +1,4 @@
+import {memo} from "react";
 import {SVG} from "../../../components/svg/svg";
 import style from './nav.module.scss'
 
@@ -27,4 +28,4 @@ const Nav = ({searchType}) => {
     )
 }
 
-export default Nav;
+export default memo(Nav);

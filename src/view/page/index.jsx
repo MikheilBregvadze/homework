@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState, memo} from "react";
 import Nav from "./navigation/nav";
 import Filter from "./aside/filter";
 import Products from "./products/products";
@@ -96,5 +96,5 @@ const Page = () => {
     )
 }
 
-export default Page;
+export default memo(Page);
 

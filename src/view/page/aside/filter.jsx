@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState, memo} from "react";
 import {SVG} from "../../../components/svg/svg";
 import Select from "../../../components/select/select";
 import {GetManufacturer, GetCategories, GetModels} from "../../../services/service";
@@ -179,4 +179,4 @@ const Filter = ({ onChangeProductsUpdate, searchProduct, products, updateCurrenc
     )
 }
 
-export default Filter;
+export default memo(Filter);

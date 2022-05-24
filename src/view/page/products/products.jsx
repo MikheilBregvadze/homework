@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, memo } from "react";
 import Product from "./product/product";
 import Select from "../../../components/select/select";
 import {Period, Range} from "../../../services/helper";
@@ -63,4 +63,4 @@ const Products = ({ products, currencyChange, updatePeriodHandler, updateRangeHa
     )
 }
 
-export default Products;
+export default memo(Products);

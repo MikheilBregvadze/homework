@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState, memo} from "react";
 import {SVG} from "../svg/svg";
 import {useClickOutside} from "../../services/hooks";
 import style from './select.module.scss'
@@ -7,7 +7,7 @@ const Select = ({ options, optionKey, label, placeholder, onChangeHandler, defau
     const [isOptionsOpen, setIsOptionsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
     const [optionsList, setOptionsList] = useState(null);
-
+    
     useEffect(() => {
         if(options) setOptionsList(options);
         if(!options) setSelectedOption(null);
@@ -85,4 +85,4 @@ const Select = ({ options, optionKey, label, placeholder, onChangeHandler, defau
 
 }
 
-export default Select;
+export default memo(Select);
